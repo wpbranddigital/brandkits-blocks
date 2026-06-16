@@ -37,3 +37,8 @@ In the WordPress block editor, click the "+" inserter icon, search for "BrandKit
 
 = 1.0.0 =
 * Initial release with 6 interactive blocks.
+
+== Development ==
+
+Development takes place on GitHub. You can contribute or follow changes here:
+https://github.com/wpbranddigital/brandkits-blocks

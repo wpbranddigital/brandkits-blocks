@@ -1,0 +1,40 @@
+.wp-block-gutenberg-kit-tabs-block {
+	.gk-tabs__nav {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 4px;
+		border-bottom: 2px solid #ddd;
+		margin-bottom: 0;
+	}
+
+	.gk-tabs__nav-btn {
+		padding: 10px 20px;
+		background: #f5f5f5;
+		border: 1px solid #ddd;
+		border-bottom: none;
+		cursor: pointer;
+		font-size: 14px;
+		font-weight: 500;
+		color: #555;
+		transition: background 0.2s, color 0.2s;
+
+		&.is-active {
+			background: #fff;
+			border-bottom: 2px solid currentColor;
+			position: relative;
+			bottom: -2px;
+		}
+
+		&:hover:not(.is-active) {
+			background: #eee;
+		}
+	}
+
+	.gk-tabs__panel {
+		padding: 20px;
+		border: 1px solid #ddd;
+		border-top: none;
+		background: #fff;
+		min-height: 80px;
+	}
+}

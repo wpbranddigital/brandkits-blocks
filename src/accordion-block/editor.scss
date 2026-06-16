@@ -1,0 +1,16 @@
+.wp-block-brandkit-blocks-accordion-block {
+	.gk-accordion {
+		&__trigger {
+			cursor: default;
+		}
+
+		&__editor-item-controls {
+			display: flex;
+			gap: 8px;
+			padding: 8px 20px;
+			background: #fafafa;
+			border-top: 1px dashed #ddd;
+			justify-content: flex-end;
+		}
+	}
+}

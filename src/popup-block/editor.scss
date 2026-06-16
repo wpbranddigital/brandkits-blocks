@@ -1,0 +1,17 @@
+.wp-block-gutenberg-kit-popup-block {
+	.gk-popup__trigger {
+		padding: 12px 24px;
+		border: none;
+		border-radius: 4px;
+		cursor: not-allowed;
+		font-size: 15px;
+		font-weight: 500;
+	}
+
+	.gk-popup__editor-note {
+		font-size: 12px;
+		color: #757575;
+		margin-top: 8px;
+		font-style: italic;
+	}
+}

@@ -1,0 +1,51 @@
+.gk-tabs {
+	&__nav {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 4px;
+		border-bottom: 2px solid #ddd;
+
+		&[style*="center"] { justify-content: center; }
+		&[style*="right"]  { justify-content: flex-end; }
+	}
+
+	&__nav-btn {
+		padding: 10px 20px;
+		background: #f5f5f5;
+		border: 1px solid #ddd;
+		border-bottom: none;
+		cursor: pointer;
+		font-size: 14px;
+		font-weight: 500;
+		color: #555;
+		transition: background 0.2s, color 0.2s;
+
+		&.is-active {
+			background: #fff;
+			border-bottom: 3px solid;
+			position: relative;
+			bottom: -2px;
+		}
+
+		&:focus-visible {
+			outline: 2px solid #005fcc;
+			outline-offset: 2px;
+		}
+	}
+
+	&__panels {
+		border: 1px solid #ddd;
+		border-top: none;
+	}
+
+	&__panel {
+		display: none;
+		padding: 24px;
+		background: #fff;
+		line-height: 1.7;
+
+		&.is-active {
+			display: block;
+		}
+	}
+}

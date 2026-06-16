@@ -1,0 +1,50 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "brandkit-blocks/accordion-block",
+  "version": "1.0.0",
+  "title": "Accordion Block",
+  "category": "brandkit-blocks",
+  "icon": "menu",
+  "description": "Collapsible content panels with smooth transitions and full ARIA accessibility support.",
+  "keywords": [ "accordion", "faq", "toggle", "collapsible" ],
+  "textdomain": "brandkit-blocks",
+  "attributes": {
+    "panels": {
+      "type": "array",
+      "default": [
+        { "title": "How does it work?", "content": "You can add and remove accordion items dynamically, customize colors, and enable toggle modes in the sidebar." },
+        { "title": "Is it accessible?", "content": "Yes! It implements full WAI-ARIA specs including focus states, ARIA attributes, and Arrow Key keyboard navigation." }
+      ]
+    },
+    "activeColor": {
+      "type": "string",
+      "default": "#0073aa"
+    },
+    "titleBgColor": {
+      "type": "string",
+      "default": "#f5f5f5"
+    },
+    "contentBgColor": {
+      "type": "string",
+      "default": "#ffffff"
+    },
+    "borderRadius": {
+      "type": "number",
+      "default": 4
+    },
+    "allowMultiple": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "supports": {
+    "html": false,
+    "align": [ "wide", "full" ]
+  },
+  "render": "file:./render.php",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js"
+}

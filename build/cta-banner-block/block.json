@@ -1,0 +1,82 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "brandkit-blocks/cta-banner-block",
+  "version": "1.0.0",
+  "title": "CTA Banner",
+  "category": "brandkit-blocks",
+  "icon": "megaphone",
+  "description": "A customisable call-to-action banner with headline, subtext, and button.",
+  "keywords": [
+    "cta",
+    "banner",
+    "call to action",
+    "button"
+  ],
+  "textdomain": "brandkit-blocks",
+  "attributes": {
+    "headline": {
+      "type": "string",
+      "default": "Ready to Get Started?"
+    },
+    "subtext": {
+      "type": "string",
+      "default": "Join thousands of happy customers today."
+    },
+    "buttonLabel": {
+      "type": "string",
+      "default": "Get Started"
+    },
+    "buttonUrl": {
+      "type": "string",
+      "default": "#"
+    },
+    "buttonTarget": {
+      "type": "boolean",
+      "default": false
+    },
+    "bgColor": {
+      "type": "string",
+      "default": "#0073aa"
+    },
+    "textColor": {
+      "type": "string",
+      "default": "#ffffff"
+    },
+    "btnBgColor": {
+      "type": "string",
+      "default": "#ffffff"
+    },
+    "btnTextColor": {
+      "type": "string",
+      "default": "#0073aa"
+    },
+    "alignment": {
+      "type": "string",
+      "default": "center"
+    },
+    "layout": {
+      "type": "string",
+      "default": "stacked"
+    },
+    "paddingV": {
+      "type": "number",
+      "default": 60
+    },
+    "borderRadius": {
+      "type": "number",
+      "default": 8
+    }
+  },
+  "supports": {
+    "html": false,
+    "align": [
+      "wide",
+      "full"
+    ]
+  },
+  "render": "file:./render.php",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

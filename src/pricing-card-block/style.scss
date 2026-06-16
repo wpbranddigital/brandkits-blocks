@@ -1,0 +1,130 @@
+.gk-pricing-card {
+	box-sizing: border-box;
+
+	*, *::before, *::after {
+		box-sizing: border-box;
+	}
+
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	padding: 40px 30px;
+	border: 1px solid #e2e8f0;
+	transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+	box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+
+	&:hover {
+		transform: translateY(-4px);
+		box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+	}
+
+	&--popular {
+		border: 2px solid var(--gk-pricing-primary, #0073aa);
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: -2px;
+			left: -2px;
+			right: -2px;
+			height: 4px;
+			background: var(--gk-pricing-primary, #0073aa);
+		}
+	}
+
+	&__badge {
+		position: absolute;
+		top: 16px;
+		right: 16px;
+		font-size: 11px;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+		padding: 4px 10px;
+		border-radius: 9999px;
+		background: var(--gk-pricing-primary, #0073aa);
+		color: var(--gk-pricing-btn-text, #fff);
+	}
+
+	&__title {
+		font-size: 20px;
+		font-weight: 700;
+		margin: 0 0 12px !important;
+		line-height: 1.2;
+	}
+
+	&__price-wrap {
+		display: flex;
+		align-items: baseline;
+		margin-bottom: 24px;
+		font-weight: 800;
+	}
+
+	&__currency {
+		font-size: 24px;
+		align-self: flex-start;
+		position: relative;
+		top: 4px;
+		margin-right: 2px;
+	}
+
+	&__price {
+		font-size: 48px;
+		line-height: 1;
+	}
+
+	&__period {
+		font-size: 14px;
+		font-weight: 500;
+		color: #718096;
+		margin-left: 4px;
+	}
+
+	&__features {
+		list-style: none !important;
+		margin: 0 0 32px 0 !important;
+		padding: 0 !important;
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+		flex-grow: 1;
+	}
+
+	&__feature {
+		display: flex;
+		align-items: flex-start;
+		font-size: 15px;
+		line-height: 1.5;
+
+		&::before {
+			content: "✓";
+			color: var(--gk-pricing-primary, #0073aa);
+			font-weight: 800;
+			margin-right: 10px;
+			flex-shrink: 0;
+			line-height: 1.5;
+		}
+	}
+
+	&__button {
+		box-sizing: border-box;
+		display: block;
+		width: 100%;
+		text-align: center;
+		padding: 12px 24px;
+		border-radius: 6px;
+		font-weight: 700;
+		font-size: 15px;
+		text-decoration: none;
+		transition: opacity 0.2s, transform 0.1s;
+		box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+
+		&:hover {
+			opacity: 0.9;
+		}
+
+		&:active {
+			transform: scale(0.98);
+		}
+	}
+}

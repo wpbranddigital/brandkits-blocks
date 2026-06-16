@@ -1,0 +1,67 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "brandkit-blocks/animated-counter",
+  "version": "1.0.0",
+  "title": "Animated Counter",
+  "category": "brandkit-blocks",
+  "icon": "chart-bar",
+  "description": "Counts up to a target number when scrolled into view. Supports prefix, suffix, and custom duration.",
+  "keywords": [ "counter", "number", "stats", "animated" ],
+  "textdomain": "brandkit-blocks",
+  "attributes": {
+    "targetNumber": {
+      "type": "number",
+      "default": 1000
+    },
+    "prefix": {
+      "type": "string",
+      "default": ""
+    },
+    "suffix": {
+      "type": "string",
+      "default": "+"
+    },
+    "label": {
+      "type": "string",
+      "default": "Happy Clients"
+    },
+    "duration": {
+      "type": "number",
+      "default": 2000
+    },
+    "numberColor": {
+      "type": "string",
+      "default": "#0073aa"
+    },
+    "labelColor": {
+      "type": "string",
+      "default": "#333333"
+    },
+    "numberSize": {
+      "type": "number",
+      "default": 48
+    },
+    "labelSize": {
+      "type": "number",
+      "default": 16
+    },
+    "alignment": {
+      "type": "string",
+      "default": "center"
+    },
+    "separator": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "supports": {
+    "html": false,
+    "align": [ "wide", "full" ]
+  },
+  "render": "file:./render.php",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js"
+}

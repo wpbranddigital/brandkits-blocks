@@ -1,0 +1,75 @@
+.gk-popup {
+	&__trigger {
+		display: inline-block;
+		padding: 12px 28px;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+		font-size: 15px;
+		font-weight: 500;
+		transition: opacity 0.2s;
+
+		&:hover { opacity: 0.88; }
+		&:focus-visible { outline: 3px solid #005fcc; outline-offset: 2px; }
+	}
+
+	&__overlay {
+		display: none;
+		position: fixed;
+		inset: 0;
+		z-index: 99999;
+		align-items: center;
+		justify-content: center;
+		padding: 20px;
+
+		&.is-open {
+			display: flex;
+		}
+	}
+
+	&__modal {
+		background: #fff;
+		width: 100%;
+		box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+		overflow: hidden;
+		animation: gkPopupIn 0.25s ease;
+	}
+
+	&__header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 20px 24px 0;
+	}
+
+	&__title {
+		font-size: 20px;
+		font-weight: 600;
+		margin: 0;
+	}
+
+	&__close {
+		background: none;
+		border: none;
+		font-size: 28px;
+		line-height: 1;
+		cursor: pointer;
+		color: #555;
+		padding: 0 4px;
+		margin-left: auto;
+
+		&:hover { color: #000; }
+		&:focus-visible { outline: 2px solid #005fcc; border-radius: 2px; }
+	}
+
+	&__content {
+		padding: 20px 24px 28px;
+		line-height: 1.7;
+		color: #333;
+	}
+}
+
+@keyframes gkPopupIn {
+	from { opacity: 0; transform: scale(0.94) translateY(-8px); }
+	to   { opacity: 1; transform: scale(1) translateY(0); }
+}

@@ -1,0 +1,67 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "brandkit-blocks/popup-block",
+  "version": "1.0.0",
+  "title": "Popup Block",
+  "category": "brandkit-blocks",
+  "icon": "external",
+  "description": "A modal popup triggered by a button. Includes focus trapping, ESC to close, and ARIA roles.",
+  "keywords": [
+    "popup",
+    "modal",
+    "dialog",
+    "lightbox"
+  ],
+  "textdomain": "brandkit-blocks",
+  "attributes": {
+    "triggerLabel": {
+      "type": "string",
+      "default": "Open Popup"
+    },
+    "popupTitle": {
+      "type": "string",
+      "default": "Popup Title"
+    },
+    "popupContent": {
+      "type": "string",
+      "default": "Add your popup content here."
+    },
+    "triggerBgColor": {
+      "type": "string",
+      "default": "#0073aa"
+    },
+    "triggerTextColor": {
+      "type": "string",
+      "default": "#ffffff"
+    },
+    "overlayOpacity": {
+      "type": "number",
+      "default": 80
+    },
+    "maxWidth": {
+      "type": "number",
+      "default": 560
+    },
+    "borderRadius": {
+      "type": "number",
+      "default": 8
+    },
+    "alignment": {
+      "type": "string",
+      "default": "left"
+    }
+  },
+  "supports": {
+    "html": false,
+    "align": [
+      "wide",
+      "full"
+    ]
+  },
+  "render": "file:./render.php",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js"
+}

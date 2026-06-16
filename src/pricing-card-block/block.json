@@ -1,0 +1,87 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "brandkit-blocks/pricing-card-block",
+  "version": "1.0.0",
+  "title": "Pricing Card",
+  "category": "brandkit-blocks",
+  "icon": "cart",
+  "description": "Displays professional pricing table cards with customizable features list, styling, and action buttons.",
+  "keywords": [ "pricing", "card", "table", "plan", "product" ],
+  "textdomain": "brandkit-blocks",
+  "attributes": {
+    "planTitle": {
+      "type": "string",
+      "default": "Standard Plan"
+    },
+    "price": {
+      "type": "string",
+      "default": "29"
+    },
+    "currencySymbol": {
+      "type": "string",
+      "default": "$"
+    },
+    "billingPeriod": {
+      "type": "string",
+      "default": "/month"
+    },
+    "features": {
+      "type": "array",
+      "default": [
+        "10 Projects",
+        "5 GB SSD Storage",
+        "Weekly Backups",
+        "Email Support"
+      ]
+    },
+    "badgeText": {
+      "type": "string",
+      "default": "Popular"
+    },
+    "buttonLabel": {
+      "type": "string",
+      "default": "Get Started"
+    },
+    "buttonUrl": {
+      "type": "string",
+      "default": "#"
+    },
+    "buttonTarget": {
+      "type": "boolean",
+      "default": false
+    },
+    "cardBgColor": {
+      "type": "string",
+      "default": "#ffffff"
+    },
+    "textColor": {
+      "type": "string",
+      "default": "#333333"
+    },
+    "primaryColor": {
+      "type": "string",
+      "default": "#0073aa"
+    },
+    "btnTextColor": {
+      "type": "string",
+      "default": "#ffffff"
+    },
+    "borderRadius": {
+      "type": "number",
+      "default": 8
+    },
+    "isPopular": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "supports": {
+    "html": false,
+    "align": [ "wide", "full" ]
+  },
+  "render": "file:./render.php",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

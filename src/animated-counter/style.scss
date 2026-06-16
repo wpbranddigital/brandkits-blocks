@@ -1,0 +1,14 @@
+.gk-counter {
+	padding: 24px 16px;
+
+	&__number {
+		font-weight: 700;
+		line-height: 1.1;
+	}
+
+	&__label {
+		margin-top: 8px;
+		font-weight: 400;
+		opacity: 0.85;
+	}
+}

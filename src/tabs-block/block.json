@@ -1,0 +1,42 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "brandkit-blocks/tabs-block",
+  "version": "1.0.0",
+  "title": "Tabs Block",
+  "category": "brandkit-blocks",
+  "icon": "table-row-before",
+  "description": "Display content in switchable tabs with keyboard navigation and ARIA support.",
+  "keywords": [ "tabs", "tabbed", "content" ],
+  "textdomain": "brandkit-blocks",
+  "attributes": {
+    "tabs": {
+      "type": "array",
+      "default": [
+        { "label": "Tab One", "content": "Content for tab one." },
+        { "label": "Tab Two", "content": "Content for tab two." }
+      ]
+    },
+    "activeColor": {
+      "type": "string",
+      "default": "#0073aa"
+    },
+    "borderRadius": {
+      "type": "number",
+      "default": 4
+    },
+    "alignment": {
+      "type": "string",
+      "default": "left"
+    }
+  },
+  "supports": {
+    "html": false,
+    "align": [ "wide", "full" ]
+  },
+  "render": "file:./render.php",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js"
+}

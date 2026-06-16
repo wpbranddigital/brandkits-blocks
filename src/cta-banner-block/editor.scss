@@ -1,0 +1,41 @@
+.wp-block-gutenberg-kit-cta-banner-block {
+	.gk-cta {
+		&--stacked {
+			.gk-cta__action { margin-top: 24px; }
+		}
+
+		&--inline {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			gap: 24px;
+			text-align: left !important;
+
+			.gk-cta__text { flex: 1; }
+			.gk-cta__action { flex-shrink: 0; }
+		}
+	}
+
+	.gk-cta__headline {
+		font-size: 28px;
+		font-weight: 700;
+		margin: 0 0 8px;
+		color: inherit;
+	}
+
+	.gk-cta__subtext {
+		font-size: 16px;
+		margin: 0;
+		opacity: 0.88;
+	}
+
+	.gk-cta__btn {
+		display: inline-block;
+		padding: 12px 28px;
+		border-radius: 4px;
+		font-weight: 600;
+		font-size: 15px;
+		cursor: default;
+	}
+}

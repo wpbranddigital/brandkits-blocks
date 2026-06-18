@@ -46,14 +46,14 @@ function Edit( { attributes, setAttributes } ) {
 	return (
 		<>
 			<InspectorControls>
-				<PanelBody title={ __( 'Accordion Settings', 'brandkit-blocks' ) } initialOpen={ true }>
+				<PanelBody title={ __( 'Accordion Settings', 'zentro-blocks' ) } initialOpen={ true }>
 					<ToggleControl
-						label={ __( 'Allow multiple open panels', 'brandkit-blocks' ) }
+						label={ __( 'Allow multiple open panels', 'zentro-blocks' ) }
 						checked={ allowMultiple }
 						onChange={ ( val ) => setAttributes( { allowMultiple: val } ) }
 					/>
 					<RangeControl
-						label={ __( 'Border Radius (px)', 'brandkit-blocks' ) }
+						label={ __( 'Border Radius (px)', 'zentro-blocks' ) }
 						value={ borderRadius }
 						onChange={ ( val ) => setAttributes( { borderRadius: val } ) }
 						min={ 0 }
@@ -66,12 +66,12 @@ function Edit( { attributes, setAttributes } ) {
 							initialOpen={ index === 0 }
 						>
 							<TextControl
-								label={ __( 'Item Title', 'brandkit-blocks' ) }
+								label={ __( 'Item Title', 'zentro-blocks' ) }
 								value={ panel.title }
 								onChange={ ( val ) => updatePanel( index, 'title', val ) }
 							/>
 							<TextareaControl
-								label={ __( 'Item Content', 'brandkit-blocks' ) }
+								label={ __( 'Item Content', 'zentro-blocks' ) }
 								value={ panel.content }
 								onChange={ ( val ) => updatePanel( index, 'content', val ) }
 								rows={ 4 }
@@ -82,32 +82,32 @@ function Edit( { attributes, setAttributes } ) {
 									variant="secondary"
 									onClick={ () => removePanel( index ) }
 								>
-									{ __( 'Remove Item', 'brandkit-blocks' ) }
+									{ __( 'Remove Item', 'zentro-blocks' ) }
 								</Button>
 							) }
 						</PanelBody>
 					) ) }
 					<Button variant="primary" onClick={ addPanel } style={ { marginTop: '8px' } }>
-						{ __( '+ Add Item', 'brandkit-blocks' ) }
+						{ __( '+ Add Item', 'zentro-blocks' ) }
 					</Button>
 				</PanelBody>
 				<PanelColorSettings
-					title={ __( 'Color Settings', 'brandkit-blocks' ) }
+					title={ __( 'Color Settings', 'zentro-blocks' ) }
 					colorSettings={ [
 						{
 							value: activeColor,
 							onChange: ( val ) => setAttributes( { activeColor: val } ),
-							label: __( 'Active Indicator Color', 'brandkit-blocks' ),
+							label: __( 'Active Indicator Color', 'zentro-blocks' ),
 						},
 						{
 							value: titleBgColor,
 							onChange: ( val ) => setAttributes( { titleBgColor: val } ),
-							label: __( 'Title Background', 'brandkit-blocks' ),
+							label: __( 'Title Background', 'zentro-blocks' ),
 						},
 						{
 							value: contentBgColor,
 							onChange: ( val ) => setAttributes( { contentBgColor: val } ),
-							label: __( 'Content Background', 'brandkit-blocks' ),
+							label: __( 'Content Background', 'zentro-blocks' ),
 						},
 					] }
 				/>
@@ -148,7 +148,7 @@ function Edit( { attributes, setAttributes } ) {
 							{ editingIndex === index && (
 								<div className="gk-accordion__panel" style={ { display: 'block' } }>
 									<div className="gk-accordion__content" style={ { padding: '20px' } }>
-										{ panel.content || __( 'Enter item content in the sidebar.', 'brandkit-blocks' ) }
+										{ panel.content || __( 'Enter item content in the sidebar.', 'zentro-blocks' ) }
 									</div>
 								</div>
 							) }

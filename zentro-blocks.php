@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name:       BrandKit Blocks
+ * Plugin Name:       Zentro Blocks
  * Description:       A collection of interactive Gutenberg blocks: Tabs, Popup, Animated Counter, and CTA Banner.
  * Version:           1.0.0 
  * Requires at least: 6.5
@@ -9,7 +9,7 @@
  * Author URI:        https://wpbranddigital.org
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain:       brandkit-blocks
+ * Text Domain:       zentro-blocks
  *
  * phpcs:disable WordPress.WP.I18n.TextDomainMismatch
  */
@@ -18,7 +18,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-function brandkit_blocks_register_blocks() {
+function zentro_blocks_register_blocks() {
 	$blocks = [
 		'tabs-block',
 		'popup-block',
@@ -32,18 +32,18 @@ function brandkit_blocks_register_blocks() {
 		register_block_type( plugin_dir_path( __FILE__ ) . 'build/' . $block );
 	}
 }
-add_action( 'init', 'brandkit_blocks_register_blocks' );
+add_action( 'init', 'zentro_blocks_register_blocks' );
 
-function brandkit_blocks_register_category( $categories, $block_editor_context ) {
+function zentro_blocks_register_category( $categories, $block_editor_context ) {
 	return array_merge(
 		$categories,
 		[
 			[
-				'slug'  => 'brandkit-blocks',
-				'title' => __( 'BrandKit Blocks', 'brandkit-blocks' ),
+				'slug'  => 'zentro-blocks',
+				'title' => __( 'Zentro Blocks', 'zentro-blocks' ),
 				'icon'  => 'admin-plugins',
 			],
 		]
 	);
 }
-add_filter( 'block_categories_all', 'brandkit_blocks_register_category', 10, 2 );
+add_filter( 'block_categories_all', 'zentro_blocks_register_category', 10, 2 );

@@ -46,9 +46,9 @@ function Edit( { attributes, setAttributes } ) {
 	return (
 		<>
 			<InspectorControls>
-				<PanelBody title={ __( 'Tab Settings', 'brandkit-blocks' ) } initialOpen={ true }>
+				<PanelBody title={ __( 'Tab Settings', 'zentro-blocks' ) } initialOpen={ true }>
 					<SelectControl
-						label={ __( 'Tab Alignment', 'brandkit-blocks' ) }
+						label={ __( 'Tab Alignment', 'zentro-blocks' ) }
 						value={ alignment }
 						options={ [
 							{ label: 'Left', value: 'left' },
@@ -58,7 +58,7 @@ function Edit( { attributes, setAttributes } ) {
 						onChange={ ( val ) => setAttributes( { alignment: val } ) }
 					/>
 					<RangeControl
-						label={ __( 'Border Radius (px)', 'brandkit-blocks' ) }
+						label={ __( 'Border Radius (px)', 'zentro-blocks' ) }
 						value={ borderRadius }
 						onChange={ ( val ) => setAttributes( { borderRadius: val } ) }
 						min={ 0 }
@@ -71,12 +71,12 @@ function Edit( { attributes, setAttributes } ) {
 							initialOpen={ index === 0 }
 						>
 							<TextControl
-								label={ __( 'Tab Label', 'brandkit-blocks' ) }
+								label={ __( 'Tab Label', 'zentro-blocks' ) }
 								value={ tab.label }
 								onChange={ ( val ) => updateTab( index, 'label', val ) }
 							/>
 							<TextareaControl
-								label={ __( 'Tab Content', 'brandkit-blocks' ) }
+								label={ __( 'Tab Content', 'zentro-blocks' ) }
 								value={ tab.content }
 								onChange={ ( val ) => updateTab( index, 'content', val ) }
 								rows={ 4 }
@@ -87,22 +87,22 @@ function Edit( { attributes, setAttributes } ) {
 									variant="secondary"
 									onClick={ () => removeTab( index ) }
 								>
-									{ __( 'Remove Tab', 'brandkit-blocks' ) }
+									{ __( 'Remove Tab', 'zentro-blocks' ) }
 								</Button>
 							) }
 						</PanelBody>
 					) ) }
 					<Button variant="primary" onClick={ addTab } style={ { marginTop: '8px' } }>
-						{ __( '+ Add Tab', 'brandkit-blocks' ) }
+						{ __( '+ Add Tab', 'zentro-blocks' ) }
 					</Button>
 				</PanelBody>
 				<PanelColorSettings
-					title={ __( 'Color Settings', 'brandkit-blocks' ) }
+					title={ __( 'Color Settings', 'zentro-blocks' ) }
 					colorSettings={ [
 						{
 							value: activeColor,
 							onChange: ( val ) => setAttributes( { activeColor: val } ),
-							label: __( 'Active Tab Color', 'brandkit-blocks' ),
+							label: __( 'Active Tab Color', 'zentro-blocks' ),
 						},
 					] }
 				/>
@@ -130,7 +130,7 @@ function Edit( { attributes, setAttributes } ) {
 					) ) }
 				</div>
 				<div className="gk-tabs__panel">
-					{ tabs[ activeTab ]?.content || __( 'Enter content in the sidebar.', 'brandkit-blocks' ) }
+					{ tabs[ activeTab ]?.content || __( 'Enter content in the sidebar.', 'zentro-blocks' ) }
 				</div>
 			</div>
 		</>

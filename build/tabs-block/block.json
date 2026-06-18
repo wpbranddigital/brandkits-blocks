@@ -1,10 +1,10 @@
 {
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 3,
-  "name": "brandkit-blocks/tabs-block",
+  "name": "zentro-blocks/tabs-block",
   "version": "1.0.0",
   "title": "Tabs Block",
-  "category": "brandkit-blocks",
+  "category": "zentro-blocks",
   "icon": "table-row-before",
   "description": "Display content in switchable tabs with keyboard navigation and ARIA support.",
   "keywords": [
@@ -12,7 +12,7 @@
     "tabbed",
     "content"
   ],
-  "textdomain": "brandkit-blocks",
+  "textdomain": "zentro-blocks",
   "attributes": {
     "tabs": {
       "type": "array",

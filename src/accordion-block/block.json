@@ -1,14 +1,14 @@
 {
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 3,
-  "name": "brandkit-blocks/accordion-block",
+  "name": "zentro-blocks/accordion-block",
   "version": "1.0.0",
   "title": "Accordion Block",
-  "category": "brandkit-blocks",
+  "category": "zentro-blocks",
   "icon": "menu",
   "description": "Collapsible content panels with smooth transitions and full ARIA accessibility support.",
   "keywords": [ "accordion", "faq", "toggle", "collapsible" ],
-  "textdomain": "brandkit-blocks",
+  "textdomain": "zentro-blocks",
   "attributes": {
     "panels": {
       "type": "array",

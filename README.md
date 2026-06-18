@@ -1,4 +1,4 @@
-# BrandKit Blocks
+# Zentro Blocks
 
 A WordPress plugin containing a collection of 6 highly interactive, customizable, and premium Gutenberg blocks.
 
@@ -6,12 +6,12 @@ A WordPress plugin containing a collection of 6 highly interactive, customizable
 
 | Block | Description | Namespace |
 |---|---|---|
-| **Tabs Block** | Switchable tab panels with ARIA keyboard navigation. | `brandkit-blocks/tabs-block` |
-| **Popup Block** | Modal dialog with focus trap, ESC key close, and overlay click close. | `brandkit-blocks/popup-block` |
-| **Animated Counter** | Count-up animation on scroll into view using Intersection Observer. | `brandkit-blocks/animated-counter` |
-| **CTA Banner** | Call-to-action banner supporting stacked or inline layouts. | `brandkit-blocks/cta-banner-block` |
-| **Accordion Block** | Collapsible detail panels with smooth CSS height transitions and ARIA accessibility. | `brandkit-blocks/accordion-block` |
-| **Pricing Card** | Clean, high-converting product/service pricing tables with badge highlighting. | `brandkit-blocks/pricing-card-block` |
+| **Tabs Block** | Switchable tab panels with ARIA keyboard navigation. | `zentro-blocks/tabs-block` |
+| **Popup Block** | Modal dialog with focus trap, ESC key close, and overlay click close. | `zentro-blocks/popup-block` |
+| **Animated Counter** | Count-up animation on scroll into view using Intersection Observer. | `zentro-blocks/animated-counter` |
+| **CTA Banner** | Call-to-action banner supporting stacked or inline layouts. | `zentro-blocks/cta-banner-block` |
+| **Accordion Block** | Collapsible detail panels with smooth CSS height transitions and ARIA accessibility. | `zentro-blocks/accordion-block` |
+| **Pricing Card** | Clean, high-converting product/service pricing tables with badge highlighting. | `zentro-blocks/pricing-card-block` |
 
 ## Requirements
 
@@ -36,13 +36,13 @@ Note: If running on Windows and PowerShell script execution is restricted, run s
 1. Run `npm run build` to compile assets into `build/`
 2. Zip the entire plugin folder (excluding `node_modules` and source files if desired)
 3. Upload via **Plugins → Add New → Upload Plugin**
-4. Activate **BrandKit Blocks**
+4. Activate **Zentro Blocks**
 
 ## Plugin Structure
 
 ```
-brandkit-blocks/
-├── brandkit-blocks.php        # Main plugin file
+zentro-blocks/
+├── zentro-blocks.php        # Main plugin file
 ├── package.json
 ├── webpack.config.js          # Multi-block entry points
 ├── readme.txt                 # WordPress.org metadata
@@ -58,7 +58,7 @@ brandkit-blocks/
 │   ├── accordion-block/
 │   │   └── ... (same structure)
 │   └── ... (other blocks)
-└── build/                     # Compiled outputs
+│── build/                     # Compiled outputs
 ```
 
 ## Technical Notes
@@ -66,7 +66,7 @@ brandkit-blocks/
 - `apiVersion: 3` on all blocks.
 - `save: () => null` — all blocks use server-side rendering via `render.php`.
 - Frontend JS uses clean, vanilla JS (no jQuery or heavy library dependencies).
-- Textdomain `'brandkit-blocks'` standardized across all blocks, code blocks, and block.json files.
+- Textdomain `'zentro-blocks'` standardized across all blocks, code blocks, and block.json files.
 - Focus trap listener leaks resolved on popups.
 - Accordion height transitions achieved using modern CSS Grid auto-sizing.
 - GPL-2.0-or-later licensed.

@@ -1,10 +1,10 @@
 {
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 3,
-  "name": "brandkit-blocks/popup-block",
+  "name": "zentro-blocks/popup-block",
   "version": "1.0.0",
   "title": "Popup Block",
-  "category": "brandkit-blocks",
+  "category": "zentro-blocks",
   "icon": "external",
   "description": "A modal popup triggered by a button. Includes focus trapping, ESC to close, and ARIA roles.",
   "keywords": [
@@ -13,7 +13,7 @@
     "dialog",
     "lightbox"
   ],
-  "textdomain": "brandkit-blocks",
+  "textdomain": "zentro-blocks",
   "attributes": {
     "triggerLabel": {
       "type": "string",

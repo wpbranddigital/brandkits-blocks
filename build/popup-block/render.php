@@ -49,7 +49,7 @@ $popup_id        = 'gk-popup-' . wp_unique_id();
 				<?php if ( $popup_title ) : ?>
 					<h2 class="gk-popup__title"><?php echo esc_html( $popup_title ); ?></h2>
 				<?php endif; ?>
-				<button class="gk-popup__close" aria-label="<?php esc_attr_e( 'Close popup', 'brandkit-blocks' ); ?>">
+				<button class="gk-popup__close" aria-label="<?php esc_attr_e( 'Close popup', 'zentro-blocks' ); ?>">
 					<span aria-hidden="true">&times;</span>
 				</button>
 			</div>

@@ -1,6 +1,6 @@
-=== BrandKit Blocks ===
-Contributors: wpbranddigital
-Tags: blocks, gutenberg, interactive, tabs, popup
+=== Zentro Blocks  ===
+Contributors: wpbranddigital25
+Tags: blocks, gutenberg, interactive, tabs, popup 
 Requires at least: 6.5
 Tested up to: 7.0 
 Requires PHP: 7.4
@@ -12,7 +12,7 @@ A collection of interactive Gutenberg blocks: Tabs, Popup, Animated Counter, CTA
 
 == Description ==
 
-BrandKit Blocks is a collection of interactive and premium Gutenberg blocks designed to enhance your page design, layouts, and conversions.
+Zentro Blocks is a collection of interactive and premium Gutenberg blocks designed to enhance your page design, layouts, and conversions.
 
 Included Blocks:
 * **Tabs Block**: Switchable tab panels with WAI-ARIA keyboard navigation (Arrow keys, Home, End) and layout options.
@@ -31,7 +31,7 @@ Included Blocks:
 == Frequently Asked Questions ==
 
 = How do I add a block? =
-In the WordPress block editor, click the "+" inserter icon, search for "BrandKit", and click on the block you'd like to insert.
+In the WordPress block editor, click the "+" inserter icon, search for "Zentro", and click on the block you'd like to insert.
 
 == Changelog ==
 

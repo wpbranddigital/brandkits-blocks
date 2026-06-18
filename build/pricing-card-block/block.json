@@ -1,10 +1,10 @@
 {
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 3,
-  "name": "brandkit-blocks/pricing-card-block",
+  "name": "zentro-blocks/pricing-card-block",
   "version": "1.0.0",
   "title": "Pricing Card",
-  "category": "brandkit-blocks",
+  "category": "zentro-blocks",
   "icon": "cart",
   "description": "Displays professional pricing table cards with customizable features list, styling, and action buttons.",
   "keywords": [
@@ -14,7 +14,7 @@
     "plan",
     "product"
   ],
-  "textdomain": "brandkit-blocks",
+  "textdomain": "zentro-blocks",
   "attributes": {
     "planTitle": {
       "type": "string",

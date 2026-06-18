@@ -29,36 +29,36 @@ function Edit( { attributes, setAttributes } ) {
 	return (
 		<>
 			<InspectorControls>
-				<PanelBody title={ __( 'Content', 'brandkit-blocks' ) } initialOpen={ true }>
+				<PanelBody title={ __( 'Content', 'zentro-blocks' ) } initialOpen={ true }>
 					<TextControl
-						label={ __( 'Headline', 'brandkit-blocks' ) }
+						label={ __( 'Headline', 'zentro-blocks' ) }
 						value={ headline }
 						onChange={ ( val ) => setAttributes( { headline: val } ) }
 					/>
 					<TextControl
-						label={ __( 'Subtext', 'brandkit-blocks' ) }
+						label={ __( 'Subtext', 'zentro-blocks' ) }
 						value={ subtext }
 						onChange={ ( val ) => setAttributes( { subtext: val } ) }
 					/>
 					<TextControl
-						label={ __( 'Button Label', 'brandkit-blocks' ) }
+						label={ __( 'Button Label', 'zentro-blocks' ) }
 						value={ buttonLabel }
 						onChange={ ( val ) => setAttributes( { buttonLabel: val } ) }
 					/>
 					<TextControl
-						label={ __( 'Button URL', 'brandkit-blocks' ) }
+						label={ __( 'Button URL', 'zentro-blocks' ) }
 						value={ buttonUrl }
 						onChange={ ( val ) => setAttributes( { buttonUrl: val } ) }
 					/>
 					<ToggleControl
-						label={ __( 'Open in new tab', 'brandkit-blocks' ) }
+						label={ __( 'Open in new tab', 'zentro-blocks' ) }
 						checked={ buttonTarget }
 						onChange={ ( val ) => setAttributes( { buttonTarget: val } ) }
 					/>
 				</PanelBody>
-				<PanelBody title={ __( 'Layout', 'brandkit-blocks' ) } initialOpen={ false }>
+				<PanelBody title={ __( 'Layout', 'zentro-blocks' ) } initialOpen={ false }>
 					<SelectControl
-						label={ __( 'Layout', 'brandkit-blocks' ) }
+						label={ __( 'Layout', 'zentro-blocks' ) }
 						value={ layout }
 						options={ [
 							{ label: 'Stacked', value: 'stacked' },
@@ -67,7 +67,7 @@ function Edit( { attributes, setAttributes } ) {
 						onChange={ ( val ) => setAttributes( { layout: val } ) }
 					/>
 					<SelectControl
-						label={ __( 'Text Alignment', 'brandkit-blocks' ) }
+						label={ __( 'Text Alignment', 'zentro-blocks' ) }
 						value={ alignment }
 						options={ [
 							{ label: 'Left', value: 'left' },
@@ -77,14 +77,14 @@ function Edit( { attributes, setAttributes } ) {
 						onChange={ ( val ) => setAttributes( { alignment: val } ) }
 					/>
 					<RangeControl
-						label={ __( 'Vertical Padding (px)', 'brandkit-blocks' ) }
+						label={ __( 'Vertical Padding (px)', 'zentro-blocks' ) }
 						value={ paddingV }
 						onChange={ ( val ) => setAttributes( { paddingV: val } ) }
 						min={ 16 }
 						max={ 120 }
 					/>
 					<RangeControl
-						label={ __( 'Border Radius (px)', 'brandkit-blocks' ) }
+						label={ __( 'Border Radius (px)', 'zentro-blocks' ) }
 						value={ borderRadius }
 						onChange={ ( val ) => setAttributes( { borderRadius: val } ) }
 						min={ 0 }
@@ -92,12 +92,12 @@ function Edit( { attributes, setAttributes } ) {
 					/>
 				</PanelBody>
 				<PanelColorSettings
-					title={ __( 'Colors', 'brandkit-blocks' ) }
+					title={ __( 'Colors', 'zentro-blocks' ) }
 					colorSettings={ [
-						{ value: bgColor,      onChange: ( v ) => setAttributes( { bgColor: v } ),      label: __( 'Background', 'brandkit-blocks' ) },
-						{ value: textColor,    onChange: ( v ) => setAttributes( { textColor: v } ),    label: __( 'Text Color', 'brandkit-blocks' ) },
-						{ value: btnBgColor,   onChange: ( v ) => setAttributes( { btnBgColor: v } ),   label: __( 'Button Background', 'brandkit-blocks' ) },
-						{ value: btnTextColor, onChange: ( v ) => setAttributes( { btnTextColor: v } ), label: __( 'Button Text', 'brandkit-blocks' ) },
+						{ value: bgColor,      onChange: ( v ) => setAttributes( { bgColor: v } ),      label: __( 'Background', 'zentro-blocks' ) },
+						{ value: textColor,    onChange: ( v ) => setAttributes( { textColor: v } ),    label: __( 'Text Color', 'zentro-blocks' ) },
+						{ value: btnBgColor,   onChange: ( v ) => setAttributes( { btnBgColor: v } ),   label: __( 'Button Background', 'zentro-blocks' ) },
+						{ value: btnTextColor, onChange: ( v ) => setAttributes( { btnTextColor: v } ), label: __( 'Button Text', 'zentro-blocks' ) },
 					] }
 				/>
 			</InspectorControls>

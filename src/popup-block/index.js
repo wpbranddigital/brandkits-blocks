@@ -28,14 +28,14 @@ function Edit( { attributes, setAttributes } ) {
 	return (
 		<>
 			<InspectorControls>
-				<PanelBody title={ __( 'Trigger Button', 'brandkit-blocks' ) } initialOpen={ true }>
+				<PanelBody title={ __( 'Trigger Button', 'zentro-blocks' ) } initialOpen={ true }>
 					<TextControl
-						label={ __( 'Button Label', 'brandkit-blocks' ) }
+						label={ __( 'Button Label', 'zentro-blocks' ) }
 						value={ triggerLabel }
 						onChange={ ( val ) => setAttributes( { triggerLabel: val } ) }
 					/>
 					<SelectControl
-						label={ __( 'Alignment', 'brandkit-blocks' ) }
+						label={ __( 'Alignment', 'zentro-blocks' ) }
 						value={ alignment }
 						options={ [
 							{ label: 'Left', value: 'left' },
@@ -45,34 +45,34 @@ function Edit( { attributes, setAttributes } ) {
 						onChange={ ( val ) => setAttributes( { alignment: val } ) }
 					/>
 				</PanelBody>
-				<PanelBody title={ __( 'Popup Content', 'brandkit-blocks' ) } initialOpen={ false }>
+				<PanelBody title={ __( 'Popup Content', 'zentro-blocks' ) } initialOpen={ false }>
 					<TextControl
-						label={ __( 'Popup Title', 'brandkit-blocks' ) }
+						label={ __( 'Popup Title', 'zentro-blocks' ) }
 						value={ popupTitle }
 						onChange={ ( val ) => setAttributes( { popupTitle: val } ) }
 					/>
 					<TextareaControl
-						label={ __( 'Popup Content', 'brandkit-blocks' ) }
+						label={ __( 'Popup Content', 'zentro-blocks' ) }
 						value={ popupContent }
 						onChange={ ( val ) => setAttributes( { popupContent: val } ) }
 						rows={ 5 }
 					/>
 					<RangeControl
-						label={ __( 'Max Width (px)', 'brandkit-blocks' ) }
+						label={ __( 'Max Width (px)', 'zentro-blocks' ) }
 						value={ maxWidth }
 						onChange={ ( val ) => setAttributes( { maxWidth: val } ) }
 						min={ 300 }
 						max={ 900 }
 					/>
 					<RangeControl
-						label={ __( 'Border Radius (px)', 'brandkit-blocks' ) }
+						label={ __( 'Border Radius (px)', 'zentro-blocks' ) }
 						value={ borderRadius }
 						onChange={ ( val ) => setAttributes( { borderRadius: val } ) }
 						min={ 0 }
 						max={ 24 }
 					/>
 					<RangeControl
-						label={ __( 'Overlay Opacity (%)', 'brandkit-blocks' ) }
+						label={ __( 'Overlay Opacity (%)', 'zentro-blocks' ) }
 						value={ overlayOpacity }
 						onChange={ ( val ) => setAttributes( { overlayOpacity: val } ) }
 						min={ 10 }
@@ -80,17 +80,17 @@ function Edit( { attributes, setAttributes } ) {
 					/>
 				</PanelBody>
 				<PanelColorSettings
-					title={ __( 'Button Colors', 'brandkit-blocks' ) }
+					title={ __( 'Button Colors', 'zentro-blocks' ) }
 					colorSettings={ [
 						{
 							value: triggerBgColor,
 							onChange: ( val ) => setAttributes( { triggerBgColor: val } ),
-							label: __( 'Button Background', 'brandkit-blocks' ),
+							label: __( 'Button Background', 'zentro-blocks' ),
 						},
 						{
 							value: triggerTextColor,
 							onChange: ( val ) => setAttributes( { triggerTextColor: val } ),
-							label: __( 'Button Text Color', 'brandkit-blocks' ),
+							label: __( 'Button Text Color', 'zentro-blocks' ),
 						},
 					] }
 				/>
@@ -108,7 +108,7 @@ function Edit( { attributes, setAttributes } ) {
 					{ triggerLabel }
 				</button>
 				<p className="gk-popup__editor-note">
-					{ __( '↑ Preview trigger only. Configure popup in sidebar.', 'brandkit-blocks' ) }
+					{ __( '↑ Preview trigger only. Configure popup in sidebar.', 'zentro-blocks' ) }
 				</p>
 			</div>
 		</>

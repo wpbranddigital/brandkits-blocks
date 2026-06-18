@@ -1,14 +1,14 @@
 {
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 3,
-  "name": "brandkit-blocks/cta-banner-block",
+  "name": "zentro-blocks/cta-banner-block",
   "version": "1.0.0",
   "title": "CTA Banner",
-  "category": "brandkit-blocks",
+  "category": "zentro-blocks",
   "icon": "megaphone",
   "description": "A customisable call-to-action banner with headline, subtext, and button.",
   "keywords": [ "cta", "banner", "call to action", "button" ],
-  "textdomain": "brandkit-blocks",
+  "textdomain": "zentro-blocks",
   "attributes": {
     "headline": {
       "type": "string",

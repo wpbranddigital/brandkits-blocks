@@ -31,30 +31,30 @@ function Edit( { attributes, setAttributes } ) {
 	return (
 		<>
 			<InspectorControls>
-				<PanelBody title={ __( 'Counter Settings', 'brandkit-blocks' ) } initialOpen={ true }>
+				<PanelBody title={ __( 'Counter Settings', 'zentro-blocks' ) } initialOpen={ true }>
 					<TextControl
 						type="number"
-						label={ __( 'Target Number', 'brandkit-blocks' ) }
+						label={ __( 'Target Number', 'zentro-blocks' ) }
 						value={ targetNumber }
 						onChange={ ( val ) => setAttributes( { targetNumber: parseInt( val ) || 0 } ) }
 					/>
 					<TextControl
-						label={ __( 'Prefix (e.g. $)', 'brandkit-blocks' ) }
+						label={ __( 'Prefix (e.g. $)', 'zentro-blocks' ) }
 						value={ prefix }
 						onChange={ ( val ) => setAttributes( { prefix: val } ) }
 					/>
 					<TextControl
-						label={ __( 'Suffix (e.g. +, %)', 'brandkit-blocks' ) }
+						label={ __( 'Suffix (e.g. +, %)', 'zentro-blocks' ) }
 						value={ suffix }
 						onChange={ ( val ) => setAttributes( { suffix: val } ) }
 					/>
 					<TextControl
-						label={ __( 'Label', 'brandkit-blocks' ) }
+						label={ __( 'Label', 'zentro-blocks' ) }
 						value={ label }
 						onChange={ ( val ) => setAttributes( { label: val } ) }
 					/>
 					<RangeControl
-						label={ __( 'Animation Duration (ms)', 'brandkit-blocks' ) }
+						label={ __( 'Animation Duration (ms)', 'zentro-blocks' ) }
 						value={ duration }
 						onChange={ ( val ) => setAttributes( { duration: val } ) }
 						min={ 500 }
@@ -62,12 +62,12 @@ function Edit( { attributes, setAttributes } ) {
 						step={ 100 }
 					/>
 					<ToggleControl
-						label={ __( 'Thousands Separator', 'brandkit-blocks' ) }
+						label={ __( 'Thousands Separator', 'zentro-blocks' ) }
 						checked={ separator }
 						onChange={ ( val ) => setAttributes( { separator: val } ) }
 					/>
 					<SelectControl
-						label={ __( 'Alignment', 'brandkit-blocks' ) }
+						label={ __( 'Alignment', 'zentro-blocks' ) }
 						value={ alignment }
 						options={ [
 							{ label: 'Left', value: 'left' },
@@ -77,14 +77,14 @@ function Edit( { attributes, setAttributes } ) {
 						onChange={ ( val ) => setAttributes( { alignment: val } ) }
 					/>
 					<RangeControl
-						label={ __( 'Number Font Size (px)', 'brandkit-blocks' ) }
+						label={ __( 'Number Font Size (px)', 'zentro-blocks' ) }
 						value={ numberSize }
 						onChange={ ( val ) => setAttributes( { numberSize: val } ) }
 						min={ 24 }
 						max={ 120 }
 					/>
 					<RangeControl
-						label={ __( 'Label Font Size (px)', 'brandkit-blocks' ) }
+						label={ __( 'Label Font Size (px)', 'zentro-blocks' ) }
 						value={ labelSize }
 						onChange={ ( val ) => setAttributes( { labelSize: val } ) }
 						min={ 12 }
@@ -92,17 +92,17 @@ function Edit( { attributes, setAttributes } ) {
 					/>
 				</PanelBody>
 				<PanelColorSettings
-					title={ __( 'Color Settings', 'brandkit-blocks' ) }
+					title={ __( 'Color Settings', 'zentro-blocks' ) }
 					colorSettings={ [
 						{
 							value: numberColor,
 							onChange: ( val ) => setAttributes( { numberColor: val } ),
-							label: __( 'Number Color', 'brandkit-blocks' ),
+							label: __( 'Number Color', 'zentro-blocks' ),
 						},
 						{
 							value: labelColor,
 							onChange: ( val ) => setAttributes( { labelColor: val } ),
-							label: __( 'Label Color', 'brandkit-blocks' ),
+							label: __( 'Label Color', 'zentro-blocks' ),
 						},
 					] }
 				/>
